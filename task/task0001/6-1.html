@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>实践内容1</title>
+	<style type="text/css">
+	/*	1.用两种方法来实现一个背景色为红色、宽度为960px的<DIV>在浏览器中居中*/
+		.div1_1{
+			background-color: red;
+			width: 960px;
+			height: 100px;
+			margin:0 auto;
+		}
+
+		.container{
+			margin-top: 10px;
+			position: relative;
+		}
+		.div1_2{
+			background-color: red;
+			position: absolute;
+			left: 50%;
+			width: 960px;
+			height: 100px;
+			margin-left: -480px;
+		}
+
+	/*2.有的圆角矩形是复杂图案，无法直接用border-radius，请在不使用border-radius的情况下实现一个可复用的高度和宽度都自适应的圆角矩形*/
+
+	/*3.用两种不同的方法来实现一个两列布局，其中左侧部分宽度固定、右侧部分宽度随浏览器宽度的变化而自适应变化*/ 
+	.div3_1{
+		position: relative;
+	}
+	.DIV-A1{
+		height: 100px;
+		width: 100px;
+		background-color: red;
+		position: absolute;
+	}
+	.DIV-B1{
+		height: 100px;
+		background-color: blue;
+		margin-left: 100px;
+	}
+	.DIV-C1{
+		height: 100px;
+		width: 100%;
+		background-color: yellow;
+	}
+
+	.div3_2{
+		position: relative;
+	}
+	.DIV-A2{
+		height: 100px;
+		width: 100px;
+		background-color: red;
+		float: left;
+	}
+	.DIV-B2{
+		height: 100px;
+		background-color: blue;
+		margin-left: 100px;
+	}
+	.DIV-C2{
+		height: 100px;
+		width: 100%;
+		background-color: yellow;
+	}
+
+	/*4.用两种不同的方式来实现一个三列布局，其中左侧和右侧的部分宽度固定，中间部分宽度随浏览器宽度的变化而自适应变化 */
+	.left1{
+		float: left;
+		height: 100px;
+		width: 100px;
+		background-color: red;
+	}
+	.mid1{
+		height: 100px;
+		background-color: #ccc;
+		margin: 0 100px;
+	}
+	.right1{
+		float: right;
+		height: 100px;
+		width: 100px;
+		background-color: blue;
+	}
+
+/*	.left2{
+		float: left;
+		height: 100px;
+		width: 100px;
+		background-color: blue;
+	}
+	.mid2{
+		float: left;
+		height: 100px;
+		width: 100px;
+		margin-left: -100%;
+		position: relative;
+		left: -100px;
+		background-color: #fff;
+	}
+	.right2{
+		float: left;
+		height: 100px;
+		width: 100px;
+		margin-left: -100px;
+		position: relative;
+		right: -100px;
+		background-color: blue;
+	}*/
+
+	/*5.实现一个浮动布局，红色容器中每一行的蓝色容器数量随着浏览器宽度的变化而变化 */
+	.theBox{
+		background-color: red;
+		overflow: hidden;
+		margin-top: 50px;
+	}
+	.blueBox{
+		float: left;
+		margin: 10px;
+		height: 300px;
+		width: 300px;
+		background-color: blue;
+	}
+	.around{
+		clear: both;
+	}
+	</style>
+</head>
+<body>
+	<!-- 实践1 -->
+	<div class="div1_1">1.用margin</div>
+	<div class="container">
+		<div class="div1_2">2.绝对定位</div>
+	</div>
+	<!-- 实践2 -->
+
+	<!-- 实践3 -->
+	<div><p>1.绝对定位</p></div>
+	<div class="div3_1">
+		<div class="DIV-A1">DIV-A</div>
+		<div class="DIV-B1">DIV-B</div>
+		<div class="DIV-C1">DIV-C</div>		
+	</div>
+	<div><p>2.利用float和margin</p></div>
+	<div class="div3_2">
+		<div class="DIV-A2">DIV-A2</div>
+		<div class="DIV-B2">DIV-B2</div>
+		<div class="DIV-C2">DIV-C2</div>
+	</div>
+	<!-- 实践4 -->
+	<div class="div4_1">
+		<div class="left1">left</div>
+		<div class="right1">right</div>
+		<div class="mid1">mid</div>
+	</div>
+	<!-- <div class="div4_2">
+		<div class="left2"></div>
+		<div class="mid2"></div>
+		<div class="right2"></div>
+	</div> -->
+	<!-- 实践5 -->
+	<div class="around"></div>
+	<div class="theBox">
+		<div class="blueBox"></div>
+		<div class="blueBox"></div>
+		<div class="blueBox"></div>
+		<div class="blueBox"></div>
+		<div class="blueBox"></div>
+		<div class="blueBox"></div>
+		<div class="blueBox"></div>
+		<div class="blueBox"></div>
+		<div class="blueBox"></div>
+		<div class="around"></div>
+	</div>
+</body>
+</html>

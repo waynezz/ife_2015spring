@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>纯css圆角矩形</title>
+	<style type="text/css">
+			/*2.有的圆角矩形是复杂图案，无法直接用border-radius，请在不使用border-radius的情况下实现一个可复用的高度和宽度都自适应的圆角矩形*/
+	.bor div{
+		height: 1px;
+	}
+	.b1{
+		margin: 0 3px;
+		background-color: black;
+	}
+	.b2,.b3,.b4,.mid{
+		border-left: 1px solid black;
+		border-right: 1px solid black;
+	}
+	.b2{
+		margin: 0 2px;
+	}
+	.b3{
+		margin: 0 1px;
+	}
+	.b4{
+		margin: 0 1px;
+	}
+	.mid p{
+		margin: 0;
+		padding: 0 10px;
+		font-size: 12px;
+		line-height: 24px;
+		white-space: pre-wrap;
+	}
+	</style>
+</head>
+<body>
+	<!-- 实践2 -->
+	<div class="bor">
+		<div class="b1"></div>
+		<div class="b2"></div>
+		<div class="b3"></div>
+		<div class="b4"></div>
+	</div>
+	<div class="mid">
+		<p>不使用border-radius的情况下实现一个可复用的高度和宽度都自适应的圆角矩形</p>
+	</div>
+	<div class="bor">
+		<div class="b4"></div>
+		<div class="b3"></div>
+		<div class="b2"></div>
+		<div class="b1"></div>
+	</div>
+</body>
+</html>

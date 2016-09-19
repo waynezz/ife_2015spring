@@ -4,15 +4,15 @@
 ##task0001
 HTML + CSS 基础
 * [任务要求](https://github.com/waynezz/ife_2015spring/tree/master/task/task0001)
-* <a href="#" target="_blank">在线demo</a>————多个基础页面
+* <a href="#" target="_blank">在线demo</a>——多个基础页面
 
 ##task0002
 JavaScript 基础
 * [任务要求](https://github.com/waynezz/ife_2015spring/tree/master/task/task0002)
-* <a href="#" target="_blank">在线demo</a>————多个交互功能实现
+* <a href="#" target="_blank">在线demo</a>——多个交互功能实现
 
 ##task0003
-综合练习————实现一个简单的个人任务管理系统
+综合练习——实现一个简单的个人任务管理系统
 * [任务要求](https://github.com/waynezz/ife_2015spring/tree/master/task/task0003)
 * <a href="#" target="_blank">在线demo</a>
 
